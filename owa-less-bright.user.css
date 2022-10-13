@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           OWA less bright
+@description    Reduce brightness of Outlook OWA light mode
+@namespace      https://github.com/sparrowt
+@version        1.0
+@author         Tom Sparrow
+@homepageURL    https://github.com/sparrowt/myuserstyles
+@updateURL      https://github.com/sparrowt/myuserstyles/raw/main/owa-less-bright.user.css
+==/UserStyle== */
+
+@-moz-document domain("outlook.office.com") {
+div {
+    --white: #d9d9d9;
+    --fallback-white: #dedede;
+    --neutralLighter: #c1c1c1;
+    --neutralLighterAlt: #c1c1c1;
+    --neutralSecondarySurface: #dedede;
+}
+}
