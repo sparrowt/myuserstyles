@@ -1,0 +1,57 @@
+/* ==UserStyle==
+@name           Jira Layout Improvements
+@description    Increase the size of certain page elements on JIRA
+@namespace      https://github.com/sparrowt
+@version        0.1
+@author         Tom Sparrow
+@homepageURL    https://github.com/sparrowt/myuserstyles
+@updateURL      https://github.com/sparrowt/myuserstyles/raw/main/jira-layout-improvements.user.css
+==/UserStyle== */
+
+@-moz-document domain("jira.yourcompany.net") {
+
+/* Increase size of various JIRA interface elements */
+
+
+/* Make the JIRA search box wider in 'basic' mode */
+@media screen and (min-width: 1320px) {
+    .query-component .search-container[data-mode="basic"] .search-entry {
+      width: 330px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .query-component .search-container[data-mode="basic"] .search-entry {
+      width: 430px;
+    }
+}
+
+
+/* Make the create issue modal bigger */
+#create-issue-dialog, #edit-issue-dialog {
+    width: 70% !important;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    top: 3%;
+}
+#create-issue-dialog > div.aui-dialog2-content, #edit-issue-dialog > div.aui-dialog2-content {
+    max-height: calc(100vh - 214px)
+}
+
+
+
+/* Make it easier to find the 'Component' you're looking for when filing/editing a JIRA ticket */
+select#components {
+    height: 250px;
+}
+
+
+/* Decrease height of 'Environment' box to avoid confusing it with 'Description'
+   Note however this stops you resizing it so may want to remove if using this box */
+#environment-wiki-edit > div.rte-container div.tox {
+    height: 70px !important;
+}
+
+}
