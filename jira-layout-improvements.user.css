@@ -27,8 +27,8 @@
 }
 
 
-/* Make the create issue modal bigger */
-#create-issue-dialog, #edit-issue-dialog {
+/* Make modals bigger: create issue, edit issue, edit comment */
+#create-issue-dialog, #edit-issue-dialog, #edit-comment {
     width: 70% !important;
     left: 50%;
     transform: translateX(-50%);
@@ -36,10 +36,16 @@
     margin-left: 0 !important;
     top: 3%;
 }
-#create-issue-dialog > div.aui-dialog2-content, #edit-issue-dialog > div.aui-dialog2-content {
+#create-issue-dialog > div.aui-dialog2-content,
+#edit-issue-dialog > div.aui-dialog2-content {
     max-height: calc(100vh - 214px)
 }
-
+#edit-comment > div.jira-dialog-content > form#comment-edit > div.form-body {
+    height:900px
+}
+#edit-comment > div.jira-dialog-content textarea#comment {
+    max-height: 600px !important;
+}
 
 
 /* Make it easier to find the 'Component' you're looking for when filing/editing a JIRA ticket */
@@ -53,5 +59,6 @@ select#components {
 #environment-wiki-edit > div.rte-container div.tox {
     height: 70px !important;
 }
+
 
 }
