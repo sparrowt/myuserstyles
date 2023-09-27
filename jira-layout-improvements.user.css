@@ -54,11 +54,9 @@ select#components {
 }
 
 
-/* Decrease height of 'Environment' box to avoid confusing it with 'Description'
-   Note however this stops you resizing it so may want to remove if using this box */
-#environment-wiki-edit > div.rte-container div.tox {
-    height: 70px !important;
+/* Decrease height of 'Environment' box to avoid confusing it with 'Description' */
+#environment-wiki-edit > textarea {
+    min-height: 60px !important;
 }
-
 
 }
