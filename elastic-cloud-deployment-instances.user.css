@@ -1,0 +1,43 @@
+/* ==UserStyle==
+@name           Elastic Cloud highlight instances by type
+@description    Highlight instances by type e.g. data tier in Elastic Cloud 'Overview' page for an Elastic Deployment
+@namespace      https://github.com/sparrowt
+@version        0.1
+@author         T Sparrow
+@homepageURL    https://github.com/sparrowt/myuserstyles
+@updateURL      https://github.com/sparrowt/myuserstyles/raw/main/elastic-cloud-deployment-instances.user.css
+==/UserStyle== */
+
+@-moz-document url-prefix("https://cloud.elastic.co/deployments/") {
+    li[data-test-id="node-attr-es-type--data-hot"] > div {
+        background-color: #ae0000;
+    }
+
+    li[data-test-id="node-attr-es-type--data-warm"] > div {
+        background-color: #a86d00;
+    }
+
+    li[data-test-id="node-attr-es-type--data-cold"] > div {
+        background-color: #1700c0;
+    }
+
+    .euiPanel:has(li[data-test-id="node-attr-es-type--data-hot"]) {
+        background-color: #390000;
+    }
+
+    .euiPanel:has(li[data-test-id="node-attr-es-type--data-warm"]) {
+        background-color: #392500;
+    }
+
+    .euiPanel:has(li[data-test-id="node-attr-es-type--data-cold"]) {
+        background-color: #05002c;
+    }
+
+    .euiPanel:has(li[data-test-id="node-attr-es-type--ml"]) {
+        background-color: #032c00;
+    }
+
+    .euiPanel:has(li[data-test-id="node-attr-es-type--master-eligible"]) {
+        background-color: #333;
+    }
+}
