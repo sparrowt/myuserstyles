@@ -2,7 +2,7 @@
 @name           Elastic Cloud highlight instances by type
 @description    Highlight instances by type e.g. data tier in Elastic Cloud 'Overview' page for an Elastic Deployment
 @namespace      https://github.com/sparrowt
-@version        0.1
+@version        0.2
 @author         T Sparrow
 @homepageURL    https://github.com/sparrowt/myuserstyles
 @updateURL      https://github.com/sparrowt/myuserstyles/raw/main/elastic-cloud-deployment-instances.user.css
@@ -30,14 +30,15 @@
     }
 
     .euiPanel:has(li[data-test-id="node-attr-es-type--data-cold"])[data-test-id="elasticsearch-tile"] {
-        background-color: #05002c;
+        background-color: #0b0063;
     }
 
     .euiPanel:has(li[data-test-id="node-attr-es-type--ml"])[data-test-id="elasticsearch-tile"] {
         background-color: #032c00;
     }
 
-    .euiPanel:has(li[data-test-id="node-attr-es-type--master-eligible"])[data-test-id="elasticsearch-tile"] {
+    .euiPanel:has(li[data-test-id="node-attr-es-type--master-eligible"])[data-test-id="elasticsearch-tile"],
+    .euiPanel:has(li[data-test-id="node-attr-es-type--master"])[data-test-id="elasticsearch-tile"] {
         background-color: #333;
     }
 }
