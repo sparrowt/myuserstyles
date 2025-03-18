@@ -21,23 +21,23 @@
         background-color: #1700c0;
     }
 
-    .euiPanel:has(li[data-test-id="node-attr-es-type--data-hot"]) {
+    .euiPanel:has(li[data-test-id="node-attr-es-type--data-hot"])[data-test-id="elasticsearch-tile"] {
         background-color: #390000;
     }
 
-    .euiPanel:has(li[data-test-id="node-attr-es-type--data-warm"]) {
+    .euiPanel:has(li[data-test-id="node-attr-es-type--data-warm"])[data-test-id="elasticsearch-tile"] {
         background-color: #392500;
     }
 
-    .euiPanel:has(li[data-test-id="node-attr-es-type--data-cold"]) {
+    .euiPanel:has(li[data-test-id="node-attr-es-type--data-cold"])[data-test-id="elasticsearch-tile"] {
         background-color: #05002c;
     }
 
-    .euiPanel:has(li[data-test-id="node-attr-es-type--ml"]) {
+    .euiPanel:has(li[data-test-id="node-attr-es-type--ml"])[data-test-id="elasticsearch-tile"] {
         background-color: #032c00;
     }
 
-    .euiPanel:has(li[data-test-id="node-attr-es-type--master-eligible"]) {
+    .euiPanel:has(li[data-test-id="node-attr-es-type--master-eligible"])[data-test-id="elasticsearch-tile"] {
         background-color: #333;
     }
 }
